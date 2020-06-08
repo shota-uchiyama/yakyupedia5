@@ -1,0 +1,31 @@
+.header {
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  background-color: rgb(73, 73, 73);
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    padding-left: 40px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__right {
+    font-size: 16px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    &--btn {
+      padding-right: 40px;
+    }
+
+  }
+}

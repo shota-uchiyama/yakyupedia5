@@ -1,3 +1,28 @@
-.header
-  .header__title
-    yakyupedia
+.main__content
+  .main__content__lists
+    .main__content__lists__main
+      %h.main__content__lists__main__title
+        yakyupediaは全ての野球人を応援する
+
+    .main__content__lists__show
+      %h1.main__content__lists__show__text
+        yakyupediaは野球に関する写真を共有するサイトです
+      - @posts.each do |post|
+        .content
+          .content__left
+            .content__left--image
+            - if post.image?
+              = image_tag post.image.url, height: "110", width: '150'
+          .content__right
+            .content__right__top
+              = link_to post.title, post_path(post.id), class: "content__right__top--title"
+            .content__right__bottom
+              .content__right__bottom--userName
+                = post.user.nickname
+              .content__right__bottom--date
+                = post.created_at
+    = paginate(@posts)
+
+.footer
+  .footer__title
+    @yakyupedia
