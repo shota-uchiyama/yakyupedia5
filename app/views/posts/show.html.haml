@@ -3,7 +3,7 @@
 .postDate
   = @post.created_at
 .postImage
-  = image_tag @post.image.url, height: "110", width: '150'
+  = image_tag @post.image.url, height: "500", width: '700'
 
 - if user_signed_in? && current_user.id == @post.user_id
   .postManage
