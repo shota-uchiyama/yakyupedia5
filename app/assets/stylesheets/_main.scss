@@ -1,0 +1,88 @@
+.main__content {
+
+  &__lists {
+    .pagination {
+      background-color: rgb(196, 196, 196);
+      text-align: center;
+      padding: 20px 0;
+      
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    &__main {
+      background-image: image-url('SP_1710_G032.jpg');
+      background-size: cover;
+      width: 100vw;
+      height: 600px;
+      position: relative;
+
+      &__title {
+        color: white;
+        font-size: 35px;
+        text-shadow: 0 0 5px rgba(0,0,0,0.4);
+        position: absolute;
+        top: 300px;
+        left: 700px;
+      }
+    }
+
+    &__show{
+      width: 100vw;
+      height: 800px;
+      background-color: rgb(196, 196, 196);
+      overflow: scroll;
+
+      &__text {
+        text-align: center;
+        height: 80px;
+        width: 1000px;
+        background-color: white;
+        border-radius: 19px;
+        margin: 30px auto;
+        line-height: 80px;
+        font-size: 25px;
+      }
+
+      .content {
+        
+        padding-top: 15px;
+
+        &__left {
+          margin-left: 45%;
+
+          &--image {
+
+          }
+
+        }
+
+        &__right {
+          text-align: center;
+
+          &__top {
+
+            &__title {
+              
+            }
+            a {
+              text-decoration: none;
+              font-size: 22px;
+              color: red;
+            }
+          }
+          
+          &__bottom {
+            
+            &--date {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
