@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: yakyupedia5_production
-  username: yakyupedia5
-  password: <%= ENV['YAKYUPEDIA5_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
